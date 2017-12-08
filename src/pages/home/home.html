@@ -6,9 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding [style.background-color]="bgcolor">
+  <button ion-button (click)="start()">Say a color</button>
+  <p>{{textreco}}</p>
 </ion-content>
